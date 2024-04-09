@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- navbar ----------  */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(0, 0, 0, 0.831);
+}
+
+nav ul div {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 24px;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+nav ul li .icon {
+    display: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(77, 77, 77);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    background-color: #333;
+    padding: 0px;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+nav ul ul li {
+    margin: 0;
+}
+
+nav ul ul li a {
+    padding: 10px;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+nav li:hover>div {
+    display: block;
+}
+
+
+/* ------- cta section ----------- */
+
+.cta-section {
+    height: 94vh;
+    background-color: rgba(31, 106, 227, 0.769);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+}
+
+.cta-section div h2 {
+    color: white;
+}
+
+.cta-section div button {
+    background-color: rgb(0, 68, 123);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cta-section div button:hover {
+    background-color: rgb(0, 10, 19);
+    border: solid 2px white;
+}
+
+.cta-section div button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------- products ------------- */
+
+#product-title {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 4rem 2rem 1rem 2rem;
+}
+
+#products-container {
+    /* padding: 0rem 2rem 2rem 2rem; */
+    padding: 0 20px 40px 20px;
+}
+
+#products-container h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+
+/* -------------- cards -------------- */
+
+.card {
+    max-width: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border: solid 2px rgb(236, 236, 236);
+    background-color: rgb(252, 252, 252);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.card img {
+    height: 8rem;
+}
+
+.card-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: grey;
+}
+
+.card-price {
+    font-family: "Poppins", sans-serif;
+    margin-top: 12px;
+    font-size: 2rem;
+}
+
+.card-button {
+    text-align: start;
+}
+
+.card button {
+    margin: 12px 4px 0px 0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.card button a {
+    text-decoration: none;
+}
+
+.card-button-cart {
+    background-color: rgba(0, 170, 255, 0.913);
+    color: white;
+}
+
+.card-button-cart a {
+    color: white;
+}
+
+.card-button-check a {
+    color: rgb(117, 115, 115);
+}
+
+
+/* ----------  card-category  ----------- */
+
+
+.categories {
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: rgb(224, 210, 237);
+}
+
+.category-card .title {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    font-family: "Lato", sans-serif;
+}
+
+.category-card .card-img {
+    height: 16rem;
+}
+
+.category-card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(220, 0, 220, 0.4);
+}
+
+
+/* ------------- pagination -------------- */
+
+#pagination {
+    margin: 40px;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  #pagination button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #pagination button:hover {
+    background-color: #45a049;
+  }
+
+
+
+/* ----------- footer ----------- */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.826);
+    padding: 3rem;
+    margin-top: 4rem;
+    font-family: "Lato", sans-serif;
+}
+
+
+.footer-category-title {
+    color: red;
+    margin: 20px 10px;
+    padding-left: 10px
+}
+
+.category-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.category-box-title {
+    color: rgb(197, 187, 187);
+    padding-left: 10px;
+}
+
+.category-box a {
+    margin: 5px 10px;
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+}
+
+.footer-nav {
+    margin-top: 40px;
+}
+
+.footer-nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-nav-container ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.footer-nav-list {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.footer-nav-container ul li {
+    margin: 5px 0;
+    padding-left: 10px
+}
+
+.footer-nav-container ul li h2 {
+    color: rgb(232, 230, 230);
+}
+
+.footer-nav-container ul li a,
+.content {
+    text-decoration: none;
+    color: grey;
+}
+
+

@@ -1,0 +1,171 @@
+
+<!-- ---------- navbar.html -------- -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- navbar -->
+<nav>
+    <ul>
+        <div class="nav-main">
+            <li class="active"> <a href="index.html"> Home </a> </li>  
+            <li class="icon">
+                <a href="javascript:void(0)" onclick="toggleNavbar()">
+                    <i class="fa fa-bars "></i>
+                </a>
+           </li>              
+        </div>
+        <div class="nav-responsive">
+            <li> 
+                <a href="#"> Men's </a>
+                <ul>
+                <li><a href="#"> Shirt </a></li>
+                <li><a href="#"> Jeans </a></li>
+                <li><a href="#"> Wallet </a></li>
+                </ul>
+            </li>
+            <li> 
+                <a href="#"> Women's </a> 
+                <ul>
+                <li><a href="#"> Frock </a></li>
+                <li><a href="#"> Necklace </a></li>
+                <li><a href="#"> Makeup </a></li>
+                </ul>
+            </li>
+            <li> 
+                <a href="#"> Jewellery </a> 
+                <ul>
+                <li><a href="#"> Gold </a></li>
+                <li><a href="#"> Silver </a></li>
+                <li><a href="#"> Bracelet </a></li>
+                </ul>
+            </li>
+            <li> <a href="#"> Clothing </a> </li>
+        </div>
+        <div class="nav-responsive">
+            <li> <a href="#"> Cart </a> </li>
+            <li> <a href="#"> Checkout </a> </li>
+        </div>
+    </ul>
+</nav>
+
+
+
+<style>
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-family: "Poppins", sans-serif;
+        background-color: rgba(0, 0, 0, 0.831);
+    }
+    
+    nav ul div {
+        display: flex;
+    }
+
+    .nav-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .active {
+        background-color: rgb(208, 55, 55);
+    }
+
+    nav ul .icon {
+        display: none;
+        color: white;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+        padding: 10px;
+        list-style-type: none;    
+    }
+    
+    nav ul li:hover {
+        background-color: rgb(77, 77, 77);
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav ul li {
+        position: relative;
+    }
+    
+    nav ul ul {
+        position: absolute;
+        background-color: #333;
+        padding: 0px;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    
+    nav ul ul li {
+        margin: 0;
+    }
+    
+    nav ul ul li a {
+        padding: 10px;
+    }
+    
+
+    @media screen and (max-width: 800px) {
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul .icon {
+        display: block;
+    }
+
+    nav ul div li {
+        margin: 0;
+    }
+
+    nav li:hover>ul {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+    }
+
+    /* nav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    } */
+}
+    
+</style>
+
+<script src="script.js"> </script>
